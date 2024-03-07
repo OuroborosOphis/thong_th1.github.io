@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khảo sát</title>
+  <link rel="stylesheet" href="style.css">
+  <title>THÔNG TIN TIỂU SỬ</title>
+<style>
+  #pageTitle, #surveyForm {
+    text-align: center;
+    display: block;
+  }
+  .container {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="pageTitle">THÔNG TIN TIỂU SỬ</h1>
+    <form id="surveyForm">
+    <div class = "form-group" id="form-group">
+        <label for="fullName">Họ và tên:</label>
+        <input type="text" id="fullName" required><br>
+    </div>
+    <div class = "form-group" id="form-group">
+        <label for="dob">Ngày tháng năm sinh:</label>
+        <input type="date" id="dob" required><br>
+    </div>
+    <div class = "form-group" id="form-group">
+        <label for="cccd">CCCD:</label>
+        <input type="text" id="cccd" required><br>
+    </div>
+    <div class = "form-group" id="form-group">
+        <label for="address">Địa chỉ thường trú:</label>
+        <input type="text" id="address" required><br>
+    </div>
+      <button type="submit">Hoàn thành</button>
+    </form>
+  </div>
+  
+  <script src="stylejs.js"></script>
+</body>
+</html>
