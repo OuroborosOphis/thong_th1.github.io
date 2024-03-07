@@ -1,7 +1,11 @@
 function submit() {
     if (confirm("Bạn có chắc chắn muốn nộp bài không?")) {
+        saveTrueFalse();
+        save1in4();
+        saveMultipleChoice();
         saveTL();
-        // window.location.href = "ketqua.html";
+        localStorage.setItem('hasData', true);
+        window.location.href = "ketqua.html";
     }
 }
 
@@ -16,7 +20,6 @@ function saveTrueFalse() {
             selectedAnswers[questionName] = answer.value;
         }
     }
-    console.log(selectedAnswers);
     localStorage.setItem("selectedAnswers", JSON.stringify(selectedAnswers));
 }
 
@@ -31,7 +34,6 @@ function save1in4() {
             selectedAnswers1In4[questionName] = answer.value;
         }
     }
-    console.log(selectedAnswers1In4);
     localStorage.setItem("selectedAnswers1in4", JSON.stringify(selectedAnswers1In4));
 }
 
@@ -58,7 +60,6 @@ function saveMultipleChoice() {
             answersMultiple[questionName].push(checkbox.value);
         }
     });
-    console.log(answersMultiple);
     // Lưu đối tượng answers vào localStorage
     localStorage.setItem('answersMultiple', JSON.stringify(answersMultiple));
 }
