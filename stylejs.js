@@ -32,18 +32,16 @@ function restoreData() {
 
 
 // Gọi hàm khôi phục dữ liệu khi trang được tải lại
-window.onload = restoreData;
-if (document.getElementById('surveyForm')!=null){
+// window.onload = restoreData;
+if (document.getElementById('surveyForm') != null) {
     document.getElementById('surveyForm').addEventListener('submit', function(event) {
         event.preventDefault();
-        window.location.href="trangthi.html";
-      
+        window.location.href = "trangthi.html";
+
         // Lấy thông tin từ form
         var fullName = document.getElementById('fullName').value;
         var dob = document.getElementById('dob').value;
         var cccd = document.getElementById('cccd').value;
         var address = document.getElementById('address').value;
-      });
+    });
 }
-
-  

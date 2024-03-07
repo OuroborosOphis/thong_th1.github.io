@@ -1,22 +1,22 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #2922221f;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     flex-grow: 1;
     margin-right: 10px;
-  }
-  
-  #answerTL{
+}
+
+#answerTL {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -27,56 +27,66 @@ body {
     resize: none;
     overflow-y: scroll;
     height: 80px;
-  }
-  
-  input[type="text"],
-  input[type="date"] {
+}
+
+input[type="text"],
+input[type="date"] {
     width: 50%;
-  }
-  
-  label {
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
     display: block;
     margin-top: 10px;
+    margin-bottom: 5px;
     /* width: 100%; */
-  }
-  
-  button {
+}
+
+button {
     border-radius: 10px;
     border-collapse: collapse;
     border: 1px #761b1b solid;
     padding: 5px 10px;
     cursor: pointer;
     margin-top: 10px;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #f90101;
-  }
-  #surveyForm{
-    margin:0 auto;
-  }
-  h1{
+}
+
+#surveyForm {
     margin: 0 auto;
-    margin-top:20px;
-  }
-  #surveyQuestions {
+}
+
+h1 {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#surveyQuestions {
     margin-left: 80px;
-  }
-  #pick , .answer label{
+}
+
+#pick,
+.answer label {
     font-size: 20px;
     font-weight: bold;
     margin-right: 5px;
     margin-bottom: 9px;
-  }
-  .answer {
-    display: flex;
-    align-items:center;
-    margin-bottom: 10px; /* Thêm khoảng cách giữa các câu trả lời */
-  }
+}
 
-  .answer label, .multipleChoice label{
-    margin-right: 1px; /* Thêm khoảng cách giữa nhãn và radio */
-  }
-   
-  
-  
+.answer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Thêm khoảng cách giữa các câu trả lời */
+}
+
+.answer label,
+.multipleChoice label {
+    margin-right: 1px;
+    /* Thêm khoảng cách giữa nhãn và radio */
+}
